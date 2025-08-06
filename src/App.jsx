@@ -8,6 +8,10 @@ function App() {
   return (
     <>
     <h1>LEARNING ABOUT TAROT </h1>
+
+    <Routes>
+      <Route path="/cards" element={<AllCards/>}/>
+    </Routes>
     </>
   )
 }
