@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import AllCards from './components/AllCards'
 
 function App() {
 
