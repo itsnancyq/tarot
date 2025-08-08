@@ -1,12 +1,8 @@
-# React + Vite
+# TAROT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I got this idea from scrolling through TikTok and watching some tarot readings for the collective. After a while, I began to develop an interest in knowing the meaning of each card,and how it can help guide those called to delivering readings. To help bridge us with Universe/Spirit/angels/Higher self. 
 
-Currently, two official plugins are available:
+Tarot **is** a bridge. Briginging, linking us all(ourself, Universe, reader) to connect.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+An **_energy connection._**
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
