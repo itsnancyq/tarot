@@ -7,9 +7,9 @@ function Cards(){
     useEffect(()=>{
         const getAllCards = async() => {
             try{
-                const res = await fetch("https://tarotapi.dev/cards")
+                const res = await fetch("https://tarotapi.dev/api/v1/cards")
                 const data = await res.json();
-                setAllCards(data);
+                setAllCards(data.cards);
             } catch (err) {
                 console.error(err);
             }
@@ -18,7 +18,7 @@ function Cards(){
     }, []);
 
     const filteredCards = allCards.filter((card)=>
-        card.title.toLowerCase().includes(searchCard.toLowerCase())
+        card.name.toLowerCase().includes(searchCard.toLowerCase())
     );
 
     return(
@@ -41,7 +41,7 @@ function Cards(){
             {
                 filteredCards && (
                     filteredCards.map((card)=>(
-                        <div key={card.id} className="cardContainer">
+                        <div key={card.name} className="cardContainer">
                             <img
 
                             />

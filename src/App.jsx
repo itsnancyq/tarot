@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import AllCards from './components/AllCards'
+import { Routes, Route } from 'react-router-dom'
+import Cards from './components/AllCards'
+import Home from './components/Home'
 
 function App() {
 
@@ -10,7 +12,8 @@ function App() {
     <h1>LEARNING ABOUT TAROT </h1>
 
     <Routes>
-      <Route path="/cards" element={<AllCards/>}/>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/cards" element={<Cards/>}/>
     </Routes>
     </>
   )
