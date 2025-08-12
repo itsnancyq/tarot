@@ -47,8 +47,8 @@ function Cards(){
                             />
                             <div className="cardAbout">
                                 <h2>{card.name}</h2>
-                                <h2>{card.type}</h2>
-                                <h2>{card.desc}</h2>
+                                {/* <h2>Type: {card.type}</h2> */}
+                                {/* <h2>{card.desc}</h2> */}
                                 <button onClick={()=>handleClick(card)} className="cardDetailButton">Details</button>
                             </div>
                         </div>
