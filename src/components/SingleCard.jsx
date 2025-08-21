@@ -31,9 +31,9 @@ function SingleCard(){
             /> */}
 
             <div>
-                <h1>{card.name}</h1>
-                <h2>Type: {type.card}</h2>
-                <h3>About: {card.desc}</h3>
+                <h1>{oneCard.name}</h1>
+                <h2>Type: {oneCard.type}</h2>
+                <h3>About: {oneCard.desc}</h3>
             </div>
         </div>
         </>
