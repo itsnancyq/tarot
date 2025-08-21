@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom";
 
 function Cards(){
     const [allCards, setAllCards] = useState([])
     const [searchCard, setSearchCard] = useState("")
+
+    const navigate = useNavigate()
+    const handleClick = (card) => {
+        navigate(`/cards/${card.id}`)
+    }
 
     useEffect(()=>{
         const getAllCards = async() => {
