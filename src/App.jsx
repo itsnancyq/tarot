@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <h1>LEARNING ABOUT TAROT </h1>
+    <h1>TarotUI</h1>
 
     <Routes>
       <Route path="/" element={<Home/>}/>

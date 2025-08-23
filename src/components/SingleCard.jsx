@@ -1,53 +1,3 @@
-// import { useEffect, useState } from "react"
-// import { Link, useParams } from "react-router-dom"
-
-
-// function SingleCard(){
-//     const [card, setCard] = useState(null);
-
-//     const { cardId } = useParams();
-
-//     useEffect(()=>{
-//         const getOneCard = async() => {
-//             try{
-//                 const res = await fetch(`https://tarotapi.dev/api/v1/cards/${cardId}`);
-//                 const data = await res.json();
-//                 setCard(data.cards); /* pick the firse card object */
-//             } catch(err) {
-//                 console.error(err);
-//             }
-//         }
-//         if (cardId) getOneCard();
-//     }, [cardId]);
-
-//     if (!card) return <p>Loading...</p>; /* guard before render */
-
-//     return(
-//         <>
-//         <div>
-//             <Link to="/cards" className="backLink">Back</Link>
-//         </div>
-
-//         <div className="singleCardContainer">
-
-//             {/* <img
-//             alt={card.name}
-//             /> */}
-
-//             <div className="singleCard">
-//                 <h1>{card.name}</h1>
-//                 <h2>Type: {card.type}</h2>
-//                 <h3>About: {card.desc}</h3>
-//                 <p><strong>Upright:</strong> {card.meaning_up}</p>
-//                 <p><strong>Reversed</strong>: {card.meaning_rev}</p>
-//             </div>
-//         </div>
-//         </>
-//     );
-// }
-
-// export default SingleCard;
-
 import { useEffect, useState } from "react";
 import { useLocation, useParams, Link } from "react-router-dom";
 
@@ -95,10 +45,10 @@ function SingleCard() {
   if (!card) return <p>No card data.</p>;
 
   return (
-    <div style={{ padding: 16 }}>
+    <div>
       <p><Link to="/cards">← Back</Link></p>
       <h1>{card.name}</h1>
-      <img className="image" src={`/tarot/${card.name_short}.jpeg`}
+      <img className="image" src={`/cards/${card.name_short}.jpeg`}
       alt={`${card.name} tarot card`}
       loading="lazy"
       />
