@@ -98,7 +98,9 @@ function SingleCard() {
     <div style={{ padding: 16 }}>
       <p><Link to="/cards">← Back</Link></p>
       <h1>{card.name}</h1>
-      <img className="image" src="https://images.squarespace-cdn.com/content/v1/5707eefeb09f9535e273ea3d/1517935763958-5IQ5JWP0F6C3YSHGP03M/the_foolRWS.jpg" alt={`${card.name} tarot card`}
+      <img className="image" src={`/tarot/${card.name_short}.jpeg`}
+      alt={`${card.name} tarot card`}
+      loading="lazy"
       />
       <p>{card.desc}</p>
       <p><strong>Upright:</strong> {card.meaning_up}</p>

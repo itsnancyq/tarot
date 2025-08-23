@@ -135,8 +135,6 @@ function Cards() {
         ) : (
           filteredCards.map((card) => (
             <div key={card.name_short} className="cardContainer">
-              {/* If you add images later, include alt */}
-              <img alt={card.name} />
               <div className="cardAbout">
                 <h2>{card.name}</h2>
                 <button onClick={() => handleClick(card)} className="cardDetailButton">
