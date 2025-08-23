@@ -13,4 +13,3 @@ I got this idea from scrolling through TikTok and watching some tarot readings f
 Tarot **is** a bridge. Briginging, linking us all(ourself, Universe, reader) to connect.
 
 An **_energy connection._**
-
