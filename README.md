@@ -4,6 +4,7 @@ This is a frontend web application that is a resource to interpret tarot cards.
 
 I am using this [API](https://app.swaggerhub.com/apis/ekswagger/tarot-api/1.3) to get my data.
 
+Images are used from [this](https://steve-p.org/cards/RWSa.html) website.
 
 ## ABOUT
 
@@ -12,4 +13,3 @@ I got this idea from scrolling through TikTok and watching some tarot readings f
 Tarot **is** a bridge. Briginging, linking us all(ourself, Universe, reader) to connect.
 
 An **_energy connection._**
-
