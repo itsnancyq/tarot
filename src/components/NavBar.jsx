@@ -1,4 +1,7 @@
+
+
 function NavBar() {
+
 
     return(
         <>
