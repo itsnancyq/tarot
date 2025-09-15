@@ -58,7 +58,7 @@ function Cards() {
         <h1>All Cards</h1>
       </div>
 
-      <div>
+      <div className="cardsGrid">
         {filteredCards.length === 0 ? (
           <p>No matches.</p>
         ) : (
