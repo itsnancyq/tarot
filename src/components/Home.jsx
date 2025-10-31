@@ -7,12 +7,14 @@ function Home(){
     }
 
     return(
-    <>
-    <h1>Take a leap of faith...</h1>
-    <button onClick={handleClick}>
-        Dive in
-    </button>
-    </>
+    <div className="home-container fade-in">
+        <div className="content">
+            <h1>Take a leap of faith...</h1>
+            <button onClick={handleClick}>
+                Dive in
+            </button>
+        </div>
+    </div>
     )
 }
 
