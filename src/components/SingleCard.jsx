@@ -9,6 +9,8 @@ function SingleCard() {
   const [loading, setLoading] = useState(!cardFromState);
   const [error, setError] = useState("");
 
+  const [isEnlarged, setIsEnlarged] = useState(false);
+
   useEffect(() => {
     if (cardFromState) return; // already have it from the list page
 
@@ -48,13 +50,16 @@ function SingleCard() {
     <div>
       <p><Link to="/cards">← Back</Link></p>
       <h1>{card.name}</h1>
-      <img className="image" src={`/cards/${card.name_short}.jpeg`}
-      alt={`${card.name} tarot card`}
-      loading="lazy"
+
+      <img className= "image"
+        src={`/cards/${card.name_short}.jpeg`}
+        alt={`${card.name} tarot card`}
+        loading="lazy"
+        onClick={() => setIsEnlarged(true)}
       />
       <h2>Card Description:</h2>
         <p className="cardInfo">{card.desc}</p>
-        
+
       <h2>Interpretations:</h2>
         <p className="cardInfo"><strong>Upright:</strong> {card.meaning_up}</p>
         <p className="cardInfo"><strong>Reversed:</strong> {card.meaning_rev}</p>
@@ -62,6 +67,13 @@ function SingleCard() {
         <strong>Type:</strong> {card.type}
         <strong>ID:</strong> {card.name_short}
       </p> */}
+
+      {isEnlarged && (
+        <div className="overlay" onClick={() => setIsEnlarged(false)}>
+          <img className="enlargedImg" src={`/cards/${card.name_short}.jpeg`} alt={`${card.name} tarot card enlarged`}
+          />
+        </div>
+      )}
     </div>
   );
 }

@@ -39,8 +39,37 @@
   size: 20px;
   max-width: 250px;
   border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* dim the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.enlargedImg {
+  max-width: 80vw;
+  max-height: 90vh;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+  transform: scale(1);
 }
 
 .imageAll {
   max-width: 120px;
+  border-radius: 4px;
 }
