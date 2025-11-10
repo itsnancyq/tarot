@@ -35,12 +35,12 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}
-
 .image {
   size: 20px;
   max-width: 250px;
   border-radius: 8px;
+}
+
+.imageAll {
+  max-width: 120px;
 }

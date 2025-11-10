@@ -52,12 +52,16 @@ function SingleCard() {
       alt={`${card.name} tarot card`}
       loading="lazy"
       />
-      <p>{card.desc}</p>
-      <p><strong>Upright:</strong> {card.meaning_up}</p>
-      <p><strong>Reversed:</strong> {card.meaning_rev}</p>
-      <p>
+      <h2>Card Description:</h2>
+        <p className="cardInfo">{card.desc}</p>
+        
+      <h2>Interpretations:</h2>
+        <p className="cardInfo"><strong>Upright:</strong> {card.meaning_up}</p>
+        <p className="cardInfo"><strong>Reversed:</strong> {card.meaning_rev}</p>
+      {/* <p>
         <strong>Type:</strong> {card.type}
-        <strong>ID:</strong> {card.name_short}</p>
+        <strong>ID:</strong> {card.name_short}
+      </p> */}
     </div>
   );
 }
