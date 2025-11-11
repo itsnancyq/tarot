@@ -6,8 +6,7 @@ import Home from './components/Home'
 import SingleCard from './components/SingleCard'
 import NavBar from './components/NavBar'
 import Suits from './components/Suits'
-import Wands from './components/Wands'
-// import cups, swords, pentacles
+import SuitDetails from './components/SuitDetails'
 import tarotLogo from './assets/tarotLogo.png'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -26,8 +25,7 @@ function App() {
       <Route path="/cards" element={<Cards/>}/>
       <Route path="/cards/:cardId" element={<SingleCard/>}/>
       <Route path="/suits" element ={<Suits/>}/>
-        <Route path="/suits/wands" element={<Wands />} />
-        {/* route cups, swords, pentacles */}
+      <Route path="/suits/:suitName" element={<SuitDetails />} />
 
     </Routes>
 
