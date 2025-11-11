@@ -1,17 +1,25 @@
 import { Link, Outlet} from "react-router-dom";
 
 function Suits(){
+    const suits = [
+        { name: "Wands", img: "./public/cards/back.jpeg"},
+        { name: "Cups", img: "./public/cards/back.jpeg"},
+        { name: "Swords", img: "./public/cards/back.jpeg"},
+        { name: "Pentacles", img: "./public/cards/back.jpeg"}
+    ];
 
     return(
-        <div className='suitsPage'>
+        <div>
             <h1>The Four Suits</h1>
-            <nav>
-                <Link to="/suits/wands">Wands</Link>
-                <Link to="/suits/cups">Cups</Link>
-                <Link to="/suits/swords">Swords</Link>
-                <Link to="/suits/pentacles">Pentacles</Link>
-                {/* wands, cups, swords, pentacles */}
-            </nav>
+
+            <div className="cardsGrid">
+                {suits.map((suit) => (
+                    <Link to={suit.name.toLowerCase()} key={suit.name} className="cardContainer">
+                        <img className="image" src={suit.img} alt={suit.name}/>
+                        <h2>{suit.name}</h2>
+                    </Link>
+                ))}
+            </div>
 
             <Outlet />
         </div>
