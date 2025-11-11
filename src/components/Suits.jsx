@@ -1,4 +1,4 @@
-import { Link, Outlet} from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 function Suits(){
     const suits = [
@@ -14,9 +14,9 @@ function Suits(){
 
             <div className="cardsGrid">
                 {suits.map((suit) => (
-                    <Link to={suit.name.toLowerCase()} key={suit.name} className="cardContainer">
+                    <Link to={`/suits/${suit.name.toLowerCase()}`} key={suit.name} className="cardContainer">
                         <img className="image" src={suit.img} alt={suit.name}/>
-                        <h2>{suit.name}</h2>
+                        <h2 className="title">{suit.name}</h2>
                     </Link>
                 ))}
             </div>

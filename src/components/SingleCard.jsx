@@ -48,7 +48,7 @@ function SingleCard() {
 
   return (
     <div>
-      <p><Link to="/cards">← Back</Link></p>
+      <p><Link to="/cards">← Back</Link></p> 
       <h1>{card.name}</h1>
 
       <img className= "image"

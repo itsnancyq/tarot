@@ -54,7 +54,7 @@ function Cards() {
         />
       </div>
 
-      <div className="title">
+      <div>
         <h1>All Cards</h1>
       </div>
 
@@ -67,7 +67,7 @@ function Cards() {
               <div className="cardAbout">
                 <h2>{card.name}</h2>
                 <img className="imageAll" src={`/cards/${card.name_short}.jpeg`}
-                  alt={`${card.name} tarot card`} loading="lazy"
+                  alt={card.name} loading="lazy"
                 />
                 <button onClick={() => handleClick(card)} className="cardDetailButton">
                   Details
