@@ -16,9 +16,9 @@ function App() {
 
   return (
     <>
-    <h1><img id='logo' src={tarotLogo}/>TarotUI</h1>
-
-    <NavBar />
+    <div className="">
+      <h1><img id='logo' src={tarotLogo}/>TarotUI</h1>
+      <NavBar />
 
     <Routes>
       <Route path="/" element={<Home/>}/> 
@@ -28,6 +28,7 @@ function App() {
       <Route path="/suits/:suitName" element={<SuitDetails />} />
 
     </Routes>
+    </div>
 
     <Footer />
     </>

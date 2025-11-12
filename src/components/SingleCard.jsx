@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useLocation, useParams, Link } from "react-router-dom";
+import { useLocation, useParams, Link} from "react-router-dom";
+import BackButton from "./BackButton";
 
 function SingleCard() {
   const { cardId } = useParams(); // matches /cards/:cardId
@@ -46,9 +47,11 @@ function SingleCard() {
   if (error) return <p style={{ color: "crimson" }}>{error}</p>;
   if (!card) return <p>No card data.</p>;
 
+
   return (
     <div>
-      <p><Link to="/cards">← Back</Link></p> 
+      {/* <p><Link to="/cards">← Back</Link></p> */}
+      <BackButton />
       <h1>{card.name}</h1>
 
       <img className= "image"
