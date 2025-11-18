@@ -25,10 +25,10 @@ function SuitDetails() {
     if (loading) return <p>Loading {suitName} cards...</p>;
 
     const suitTitles = {
-        wands: "Suit of Wands",
-        cups: "Suit of Cups",
-        swords: "Suit of Swords",
-        pentacles: "Suit of Pentacles",
+        wands : "Suit of Wands 🪄",
+        cups: "Suit of Cups ☕",
+        swords: "Suit of Swords ⚔️",
+        pentacles : "Suit of Pentacles ⭐",
     };
 
     const suitMeanings = {
