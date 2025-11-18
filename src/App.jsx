@@ -7,6 +7,8 @@ import SingleCard from './components/SingleCard'
 import NavBar from './components/NavBar'
 import Suits from './components/Suits'
 import SuitDetails from './components/SuitDetails'
+import Courts from './components/Courts'
+import CourtDetails from './components/CourtsDetails'
 import tarotLogo from './assets/tarotLogo.png'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -25,7 +27,9 @@ function App() {
       <Route path="/cards" element={<Cards/>}/>
       <Route path="/cards/:cardId" element={<SingleCard/>}/>
       <Route path="/suits" element ={<Suits/>}/>
-      <Route path="/suits/:suitName" element={<SuitDetails />} />
+      <Route path="/suits/:suitName" element={<SuitDetails />}/>
+      <Route path="/courts" element={<Courts/>}/>
+      <Route path="/courts/:courtName" element={<CourtDetails/>}/>
 
     </Routes>
     </div>
