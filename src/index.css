@@ -97,7 +97,7 @@ button:focus-visible {
 }
 
  .home-container {
-  position: relative;
+  position: fixed;
   background-image: url("/smoke.jpg");
   background-size: cover;
   background-position: center;
@@ -113,7 +113,9 @@ button:focus-visible {
   color: white;
   text-align: center;
   opacity: 0;
-
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .fade-in {
