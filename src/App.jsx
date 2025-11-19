@@ -1,25 +1,28 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import Cards from './components/AllCards'
-import Home from './components/Home'
-import SingleCard from './components/SingleCard'
-import NavBar from './components/NavBar'
-import Suits from './components/Suits'
-import SuitDetails from './components/SuitDetails'
-import Courts from './components/Courts'
-import CourtDetails from './components/CourtsDetails'
-import tarotLogo from './assets/tarotLogo.png'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import './App.css';
+import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
+import Cards from './components/AllCards';
+import Home from './components/Home';
+import SingleCard from './components/SingleCard';
+import NavBar from './components/NavBar';
+import Suits from './components/Suits';
+import SuitDetails from './components/SuitDetails';
+import Courts from './components/Courts';
+import CourtDetails from './components/CourtsDetails';
+import tarotLogo from '/tarotLogo.png';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
+  // hide nav bar and footer on landing page!
+  const location = useLocation();
+  const hideLayout = location.pathname === "/";
 
   return (
     <>
-    <div>
-      <h1><img id='logo' src={tarotLogo}/>TarotUI</h1>
-      <NavBar />
+    <div className='libraryContainer'>
+      <h1><img id='logo' src={tarotLogo}/>Tarot Treasury</h1>
+
+      {!hideLayout && <NavBar />}
 
     <Routes>
       <Route path="/" element={<Home/>}/> 
@@ -31,11 +34,12 @@ function App() {
       <Route path="/courts/:courtName" element={<CourtDetails/>}/>
 
     </Routes>
+
     </div>
 
-    <Footer />
+    {!hideLayout && <Footer />}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
