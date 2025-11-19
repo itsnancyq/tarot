@@ -55,7 +55,8 @@ function Cards() {
       </div>
 
       <div>
-        <h1>All Cards</h1>
+        <h1>Welcome!</h1>
+        <h2>Explore tarot cards</h2>
       </div>
 
       <div className="cardsGrid">

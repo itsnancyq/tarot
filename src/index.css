@@ -187,3 +187,46 @@ button:hover {
   flex-direction: column;
   align-items: center;
 }
+
+/* 
+ */
+ .header-container {
+  display: flex;
+  justify-content: space-between; /* logo left, nav right */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #EAC483;
+  ;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#logo {
+
+  height: auto;
+  border-radius: 20px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #38639b;
+}
