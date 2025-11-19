@@ -19,25 +19,27 @@ function App() {
 
   return (
     <>
-    <div className='libraryContainer'>
-      <h1><img id='logo' src={tarotLogo}/>Tarot Treasury</h1>
+      <Header />
 
-      {!hideLayout && <NavBar />}
+      {/* <div className='header-container'>
+        <div className='logo-wrapper'>
+          <img id='logo' src={tarotLogo} alt='Tarot Logo'/>
+          <h1>Tarot Treasury</h1>
+        </div>
+      </div> */}
 
-    <Routes>
-      <Route path="/" element={<Home/>}/> 
-      <Route path="/cards" element={<Cards/>}/>
-      <Route path="/cards/:cardId" element={<SingleCard/>}/>
-      <Route path="/suits" element ={<Suits/>}/>
-      <Route path="/suits/:suitName" element={<SuitDetails />}/>
-      <Route path="/courts" element={<Courts/>}/>
-      <Route path="/courts/:courtName" element={<CourtDetails/>}/>
+      <Routes>
+        <Route path="/" element={<Home/>}/> 
+        <Route path="/cards" element={<Cards/>}/>
+        <Route path="/cards/:cardId" element={<SingleCard/>}/>
+        <Route path="/suits" element ={<Suits/>}/>
+        <Route path="/suits/:suitName" element={<SuitDetails />}/>
+        <Route path="/courts" element={<Courts/>}/>
+        <Route path="/courts/:courtName" element={<CourtDetails/>}/>
+      </Routes>
 
-    </Routes>
 
-    </div>
-
-    {!hideLayout && <Footer />}
+      <Footer />
     </>
   );
 }

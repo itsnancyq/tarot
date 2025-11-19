@@ -1,4 +1,10 @@
+import { useLocation } from "react-router-dom"
+
 function Footer() {
+    const location = useLocation();
+    const hideLayout = location.pathname === "/";
+
+    if (hideLayout) return null;
 
     return(
         <>

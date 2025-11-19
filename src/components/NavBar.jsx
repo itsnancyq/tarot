@@ -4,11 +4,13 @@ function NavBar() {
 // Class names will have to be named something that can be reusable!!!
 
     return(
-        <nav className="">
-            <Link to="/cards" className="">Home</Link>
-            <Link to="/suits" className="">Suits</Link>
-            <Link to="/courts" className="">Courts</Link>
-            <Link to="/random" className="">Random Card</Link>
+        <nav>
+            <ul className="nav-links">
+                <li><Link to="/cards" className="">Home</Link></li>
+                <li><Link to="/suits" className="">Suits</Link></li>
+                <li><Link to="/courts" className="">Courts</Link></li>
+                <li><Link to="/random" className="">Random Card</Link></li>
+            </ul>
         </nav>
     );
 }
