@@ -15,10 +15,9 @@ import Footer from './components/Footer'
 
 function App() {
 
-
   return (
     <>
-    <div className="">
+    <div>
       <h1><img id='logo' src={tarotLogo}/>TarotUI</h1>
       <NavBar />
 
