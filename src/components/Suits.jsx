@@ -26,4 +26,4 @@ function Suits(){
     );
 }
 
-export default Suits
+export default Suits;

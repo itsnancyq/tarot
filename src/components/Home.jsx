@@ -1,10 +1,10 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 // Start page, launchpad. Home will be /cards
 function Home(){
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const handleClick = () => {
-        navigate("/cards")
+        navigate("/cards");
     }
 
     return(
@@ -16,7 +16,8 @@ function Home(){
             </button>
         </div>
     </div>
-    )
+
+    );
 }
 
-export default Home
+export default Home;
