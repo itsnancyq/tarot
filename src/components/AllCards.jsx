@@ -55,8 +55,9 @@ function Cards() {
       </div>
 
       <div>
-        <h1>Welcome!</h1>
-        <h2>Explore tarot cards</h2>
+        <h1>✨ Welcome, it's all in divine timing ✨</h1>
+        <h2>Your favorite one stop tarot reference page!</h2>
+        <h3>Explore tarot cards:</h3>
       </div>
 
       <div className="cardsGrid">
