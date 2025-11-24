@@ -4,7 +4,7 @@
   font-weight: 500;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: white;
   background-color: black;
 
   font-synthesis: none;
@@ -16,11 +16,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #4B8376;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #89C1BA;
 }
 
 h1 {
@@ -196,7 +196,7 @@ button:hover {
   justify-content: space-between; /* logo left, nav right */
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #EAC483;
+  background-color: #4B8376;
   ;
 }
 
@@ -224,10 +224,10 @@ button:hover {
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: bold;
 }
 
 .nav-links li a:hover {
-  color: #38639b;
+  color: #89C1BA;
 }
