@@ -2,10 +2,10 @@ import { Link, Outlet } from "react-router-dom";
 
 function Courts(){
     const courts = [
-        { name: "Page", img: "./public/cards/back.jpeg"},
-        { name: "Knight", img: "./public/cards/back.jpeg"},
-        { name: "Queen", img: "./public/cards/back.jpeg"},
-        { name: "King", img: "./public/cards/back.jpeg"}
+        { name: "Page", img: "./cards/back.jpeg"},
+        { name: "Knight", img: "./cards/back.jpeg"},
+        { name: "Queen", img: "./cards/back.jpeg"},
+        { name: "King", img: "./cards/back.jpeg"}
     ];
 
     return(
