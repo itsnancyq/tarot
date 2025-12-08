@@ -9,6 +9,7 @@ import SuitDetails from './components/SuitDetails';
 import Courts from './components/Courts';
 import CourtDetails from './components/CourtsDetails';
 import tarotLogo from '/tarotLogo.png';
+import RandomCard from './components/RandomCard';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -36,6 +37,7 @@ function App() {
         <Route path="/suits/:suitName" element={<SuitDetails />}/>
         <Route path="/courts" element={<Courts/>}/>
         <Route path="/courts/:courtName" element={<CourtDetails/>}/>
+        <Route path="/random" element={<RandomCard />}/>
       </Routes>
 
 

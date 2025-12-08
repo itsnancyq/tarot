@@ -44,7 +44,7 @@ function SuitDetails() {
 
     return(
         <div>
-            <Link to="/suits">
+            <Link to="/suits" className="backbtn">
             ← Back to Suits
             </Link>
 

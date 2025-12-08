@@ -46,7 +46,7 @@ function CourtDetails(){
 
     return(
         <div>
-            <Link to="/courts">
+            <Link to="/courts" className="backbtn">
             ← Back to Courts
             </Link>
 

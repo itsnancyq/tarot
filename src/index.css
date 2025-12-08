@@ -235,4 +235,6 @@ button:hover {
 .backbtn {
   display: flex;
   justify-content: flex-start;
+  margin: 10px;
+  padding: 10px;
 }

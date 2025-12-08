@@ -43,7 +43,7 @@ function Cards() {
 
   return (
     <>
-      <p className="backbtn"><Link to="/">← Back</Link></p>
+      <p className="backbtn"><Link to="/">← Back to landing</Link></p>
       <div className="searchBar">
         <input
           type="text"
