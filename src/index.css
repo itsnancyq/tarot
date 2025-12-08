@@ -231,3 +231,8 @@ button:hover {
 .nav-links li a:hover {
   color: #89C1BA;
 }
+
+.backbtn {
+  display: flex;
+  justify-content: flex-start;
+}
