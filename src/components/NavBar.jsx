@@ -1,11 +1,20 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function NavBar() {
-// Class names will have to be named something that can be reusable!!!
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    }
 
     return(
         <nav>
-            <ul className="nav-links">
+            <button className="hamburger" onClick={toggleMenu}>
+                ☰
+            </button>
+
+            <ul className={`nav-links ${isOpen ? "open" : ""}`}>
                 <li><Link to="/cards" className="">Home</Link></li>
                 <li><Link to="/suits" className="">Suits</Link></li>
                 <li><Link to="/courts" className="">Courts</Link></li>

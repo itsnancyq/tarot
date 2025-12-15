@@ -85,7 +85,6 @@ button:focus-visible {
   }
 }
 
-
 .cardContainer {
   display: flex;
   flex-direction: column;
@@ -96,7 +95,7 @@ button:focus-visible {
   background-color: #111;
 }
 
- .home-container {
+.home-container {
   position: fixed;
   background-image: url("/smoke.jpg");
   background-size: cover;
@@ -123,12 +122,8 @@ button:focus-visible {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .home-container::before {
@@ -139,17 +134,15 @@ button:focus-visible {
   z-index: 0;
 }
 
-/* Ensure text sits above overlay */
 .home-container h1,
 .home-container button {
   position: relative;
   z-index: 1;
 }
 
-/* Optional button styling */
 button {
-  margin-top: 20px;
-  padding: 10px 20px;
+  /* margin-top: 20px; */
+  padding: 0px 6px;
   border: none;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.2);
@@ -157,29 +150,23 @@ button {
   font-size: 1.2rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  align-items: center;
 }
-
 button:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 
-.cardInfo{
+.cardInfo {
   margin: 30px;
   padding: 0 30px 0 30px;
 }
 
-/* html{
-  margin-bottom: 100px;
-} */
-
-.cardDetailButton{
+.cardDetailButton {
   margin-top: 14px;
   margin-bottom: 6px;
   padding: 8px 16px;
-
 }
-
-.cardDetailButton:hover{
+.cardDetailButton:hover {
   background-color: rgb(81, 83, 113);
 }
 
@@ -189,15 +176,13 @@ button:hover {
   align-items: center;
 }
 
-/* 
- */
- .header-container {
+/* Header & Navbar */
+.header-container {
   display: flex;
   justify-content: space-between; /* logo left, nav right */
   align-items: center;
   padding: 1rem 2rem;
   background-color: #4B8376;
-  ;
 }
 
 .logo-wrapper {
@@ -207,7 +192,6 @@ button:hover {
 }
 
 #logo {
-
   height: auto;
   border-radius: 20px;
   width: 150px;
@@ -237,4 +221,81 @@ button:hover {
   justify-content: flex-start;
   margin: 10px;
   padding: 10px;
+}
+
+/* Mobile iPhone responsiveness */
+@media only screen and (max-width: 480px) {
+  .header-container {
+    flex-direction: column;   /* Stack logo + nav vertically */
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logo-wrapper {
+    flex-direction: column;   /* Stack logo + h1 */
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  #logo {
+    width: 100px; /* scale logo down */
+    margin: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;   /* Stack nav items */
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links li a {
+    padding: 0.25rem 0;
+    font-size: 1rem;
+  }
+}
+
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile behavior */
+@media only screen and (max-width: 480px) {
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 auto 0.5rem auto;
+
+  }
+
+  /* Hide nav links by default */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+
+    /* Hide with height 0 and overflow hidden */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  /* Show nav links when menu is open */
+  .nav-links.open {
+    max-height: 500px; /* large enough to fit all links */
+    transition: max-height 0.3s ease-in;
+  }
 }
